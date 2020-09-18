@@ -280,7 +280,7 @@ a {
   position: relative;
 }
 
-#skill h1.title {
+.title {
   display: inline-block;
   color: white;
   font-size: 2.2rem;
@@ -289,7 +289,7 @@ a {
   top: 1.8rem;
 }
 
-#skill h1.title::after {
+.title::after {
   content: '';
   position: relative;
   display: block;
@@ -322,12 +322,240 @@ a {
   width: inherit;
   height: 1.7rem;
   border-radius: .7rem;
+  overflow: hidden;
 }
 
 #skill .progress {
   height: inherit;
-  border-radius: .7rem 0 0 .7rem;
   background-color: #18D26E;
+}
+
+#projects {
+  padding: 0 2rem;
+}
+
+#projects .projects {
+  margin-top: 4.2rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2rem;
+}
+
+#projects .project-box {
+  height: 23rem;
+  width: inherit;
+  background-color: #2B2B2B;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+#projects .project-box:hover {
+  background-color: #18D26E;
+}
+
+#projects .pro-img {
+  height: 50%;
+  background-size: cover;
+  background-position: top center;
+}
+
+#projects .text-box {
+  padding: 0.8rem 1.5rem;
+}
+
+#projects .pro-name {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#projects .pro-description {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  word-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(24, 210, 110, 0.5);
+}
+
+#certifications {
+  padding: 0 2rem;
+}
+
+#certifications .certifications {
+  margin-top: 4.2rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2rem;
+}
+
+#certifications .certi-box {
+  height: 35rem;
+  background-color: #2B2B2B;
+  border-radius: 3rem;
+  padding: 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.certi-icon {
+  height: 11rem;
+  width: 17.6rem;
+  -webkit-filter: drop-shadow(-10px 0 0 rgba(138, 137, 137, 0.23));
+          filter: drop-shadow(-10px 0 0 rgba(138, 137, 137, 0.23));
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.int {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.int-des {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#certifications .certi-box:hover {
+  background-color: #18D26E;
+}
+
+.certi-box:hover #icon-137-document-certificate {
+  fill: white;
+}
+
+#contact {
+  background-color: #18d26e;
+  height: 23rem;
+  width: 100vw;
+  margin-top: 1.8rem;
+  padding: 3rem 0 4rem 0;
+  position: relative;
+}
+
+#contact .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .Social-Profiles {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+#contact .social-icons a:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+#contact .social-icons {
+  margin: .6rem 0;
+}
+
+#contact .f-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+#contact .g-icon {
+  height: 2.7rem;
+  width: 2.7rem;
+  margin-right: 1rem;
+}
+
+#contact .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: centre;
+      -ms-flex-pack: centre;
+          justify-content: centre;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+#contact .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: centre;
+      -ms-flex-pack: centre;
+          justify-content: centre;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+#contact .mail a {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: normal;
+}
+
+#contact .location a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+#contact .l-icon {
+  height: 3.7rem;
+  margin-right: 1rem;
+}
+
+.cc a {
+  color: black;
+  font-size: 1rem;
+}
+
+.cc {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .has-fade {
@@ -472,9 +700,15 @@ a {
     top: 75%;
   }
   #skill {
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
-  #skill h1.title {
+  #projects {
+    padding: 0 4rem;
+  }
+  #certifications {
+    padding: 0 4rem;
+  }
+  .title {
     font-size: 2.8rem;
     top: 1.8rem;
   }
@@ -492,9 +726,7 @@ a {
     margin: .45rem 0;
     height: 1.9rem;
     border-radius: .8rem;
-  }
-  #skill .progress {
-    border-radius: .8rem 0 0 .8rem;
+    overflow: hidden;
   }
 }
 
@@ -532,6 +764,12 @@ a {
     top: 73%;
   }
   #skill {
+    padding: 0 3rem;
+  }
+  #projects {
+    padding: 0 3rem;
+  }
+  #certifications {
     padding: 0 3rem;
   }
   #skill .skill {
@@ -584,6 +822,90 @@ a {
   #hero .cta {
     font-size: 1.2rem;
     top: 74%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #projects .projects, #certifications .certifications {
+    margin-top: 4.2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    row-gap: 3rem;
+  }
+  #contact {
+    height: 15rem;
+  }
+  #contact .contact {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'a         c' 'b       d ';
+  }
+  #contact .Social-Profiles {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  #contact .social-icons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: b;
+  }
+  #contact .mail {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: c;
+    margin-left: 1.5rem;
+  }
+  #contact .location {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: d;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #contact .mail a {
+    margin-right: .5rem;
+  }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1023px) {
+  #projects .projects, #certifications .certifications {
+    margin-top: 4.2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 2.2rem;
+            column-gap: 2.2rem;
+    row-gap: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  #projects .projects, #certifications .certifications {
+    margin-top: 4.2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

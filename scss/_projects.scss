@@ -1,0 +1,60 @@
+#projects{
+    padding: 0 2rem;
+}
+
+#projects .projects{
+    margin-top: 4.2rem;
+    display: grid;
+    row-gap: 2rem;
+}
+
+#projects .project-box{
+    height: 23rem;
+    width: inherit;
+    background-color: #2B2B2B;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+#projects .project-box:hover{
+    background-color: #18D26E;
+}
+
+
+#projects .pro-img{
+    height: 50%;
+    background-size: cover;
+    background-position: top center;
+}
+
+#projects .text-box{
+    padding: 0.8rem 1.5rem;
+}
+
+#projects .pro-name{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#projects .pro-description{
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: transparent;
+}
+ 
+::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px  rgba(24, 210, 110, 0.5);
+}
