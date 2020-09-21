@@ -12,16 +12,18 @@
         font-size: 3rem;
     }
     #hero .social{
-        height: 6.7rem;
-        width: 6.7rem;
+        height: 6.6rem;
+        width: 6.6rem;
         margin: 0.7rem;
         background-color:rgba(255, 255, 255, 0.05);
     }
     #hero .icon{
+        position: absolute;
         height: 4.4rem;
         width: 4.4rem;
         top: 50%;
-        
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #hero .social-icon{
         position: relative;
@@ -84,10 +86,12 @@
         background-color:rgba(255, 255, 255, 0.05);
     }
     #hero .icon{
-        height: 4.25rem;
-        width: 4.25rem;
+        position: absolute;
+        height: 4.3rem;
+        width: 4.3rem;
         top: 50%;
-        
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #hero .social-icon{
         top: 1vh;
@@ -146,6 +150,9 @@
     #hero .icon{
         height: 3rem;
         width: 3rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         
     }
     #hero .social-icon{
