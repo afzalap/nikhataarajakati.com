@@ -30,6 +30,17 @@ a {
           justify-content: center;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 #header {
   position: fixed;
   z-index: 1;
@@ -185,7 +196,8 @@ a {
 }
 
 #hero {
-  background-image: url(/images/bgmobile2.png);
+  display: block;
+  background-image: url(../images/bgmobile2.png);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -278,6 +290,7 @@ a {
 #skill {
   padding: 0 2rem;
   position: relative;
+  margin-top: 3rem;
 }
 
 .title {
@@ -286,7 +299,6 @@ a {
   font-size: 2.2rem;
   font-weight: normal;
   position: relative;
-  top: 1.8rem;
 }
 
 .title::after {
@@ -299,7 +311,7 @@ a {
 }
 
 #skill .skill {
-  margin-top: 4.2rem;
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -332,21 +344,25 @@ a {
 
 #projects {
   padding: 0 2rem;
+  margin-top: 3.25rem;
 }
 
 #projects .projects {
-  margin-top: 4.2rem;
+  margin-top: 2.5rem;
   display: -ms-grid;
   display: grid;
   row-gap: 2rem;
 }
 
 #projects .project-box {
+  display: block;
   height: 23rem;
   width: inherit;
   background-color: #2B2B2B;
   border-radius: 3rem;
   overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 #projects .project-box:hover {
@@ -354,7 +370,7 @@ a {
 }
 
 #projects .pro-img {
-  height: 50%;
+  height: 60%;
   background-size: cover;
   background-position: top center;
 }
@@ -365,8 +381,9 @@ a {
 
 #projects .pro-name {
   color: white;
-  font-size: 3rem;
-  font-weight: bold;
+  margin-top: .5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 #projects .pro-description {
@@ -377,26 +394,13 @@ a {
   word-wrap: break-word;
 }
 
-::-webkit-scrollbar {
-  width: 1rem;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-track {
-  visibility: hidden;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(24, 210, 110, 0.5);
-}
-
 #certifications {
   padding: 0 2rem;
+  margin-top: 3.25rem;
 }
 
 #certifications .certifications {
-  margin-top: 4.2rem;
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   row-gap: 2rem;
@@ -457,8 +461,7 @@ a {
 #contact {
   background-color: #18d26e;
   height: 23rem;
-  width: 100vw;
-  margin-top: 1.8rem;
+  margin-top: 4rem;
   padding: 3rem 0 4rem 0;
   position: relative;
 }
@@ -556,6 +559,10 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.copyright {
+  font-size: 1.1rem;
 }
 
 .has-fade {
@@ -710,7 +717,6 @@ a {
   }
   .title {
     font-size: 2.8rem;
-    top: 1.8rem;
   }
   #skill .skill {
     -ms-grid-columns: 1fr 1fr;
@@ -780,7 +786,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 750px) {
+@media only screen and (min-width: 550px) and (max-width: 749px) {
   #hero h1 {
     font-size: 5rem;
   }
@@ -827,7 +833,6 @@ a {
 
 @media only screen and (min-width: 1024px) {
   #projects .projects, #certifications .certifications {
-    margin-top: 4.2rem;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -879,7 +884,6 @@ a {
 
 @media only screen and (min-width: 951px) and (max-width: 1023px) {
   #projects .projects, #certifications .certifications {
-    margin-top: 4.2rem;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -895,7 +899,6 @@ a {
 
 @media only screen and (min-width: 600px) and (max-width: 950px) {
   #projects .projects, #certifications .certifications {
-    margin-top: 4.2rem;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;

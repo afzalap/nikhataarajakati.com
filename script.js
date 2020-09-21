@@ -23,3 +23,64 @@ btnhamberger.addEventListener('click', () => {
     }
 }
 );
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+let timeline = gsap.timeline({
+            scrollTrigger:{
+                trigger: " #skill",
+                start: "top 90%",
+                toggleActions: "restart none none reset",
+        }});
+        timeline
+        .from("#skill .title", {
+            xPercent:"-120",
+            ease:'power3.out',
+            opacity: 0
+        })
+        .from("#skill .skill-bar", { 
+            xPercent:"-250",
+            ease:'power3.out', 
+            stagger:0.15
+        })
+        .from("#skill .progress", {
+            xPercent:"-100", 
+            ease:'power2.out',
+            stagger: 0.15,
+            opacity: 0
+        }, 1);
+        
+
+        let timeline1 = gsap.timeline({
+            scrollTrigger:{
+                trigger: " #projects",
+                start: "top 90%",
+                toggleActions: "restart none none reset",
+        }});  
+        timeline1
+        .from("#projects .title",{
+            xPercent:"-100",
+            opacity:0
+        })
+        .from("#projects .project-box",{
+            opacity:0,
+            stagger: 0.35
+        }) ; 
+
+
+        let timeline2 = gsap.timeline({
+            scrollTrigger:{
+                trigger: " #certifications",
+                start: "top 90%",
+                toggleActions: "restart none none reset",
+        }});  
+        timeline2
+        .from("#certifications .title",{
+            xPercent:"-100",
+            opacity:0
+        })
+        .from("#certifications .certi-box",{
+            opacity:0,
+            stagger: 0.35
+        }) ; 

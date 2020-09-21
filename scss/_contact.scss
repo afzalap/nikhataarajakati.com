@@ -1,8 +1,7 @@
 #contact{
     background-color: rgba(24, 210, 110, 1);
     height: 23rem;
-    width: 100vw;
-    margin-top: 1.8rem;
+    margin-top: 4rem;
     padding: 3rem 0 4rem 0;
     position: relative;
 }
@@ -81,4 +80,8 @@
     bottom: 5%;
     left: 50%;
     transform: translate(-50%);
+}
+
+.copyright{
+    font-size: 1.1rem;
 }
