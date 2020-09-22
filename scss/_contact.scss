@@ -1,5 +1,5 @@
 #contact{
-    background-color: rgba(24, 210, 110, 1);
+    background-color: #18d26e;
     height: 23rem;
     margin-top: 4rem;
     padding: 3rem 0 4rem 0;
@@ -31,6 +31,7 @@
 #contact .f-icon{
     height: 3rem;
     width: 3rem;
+    transition: fill .4s ease;
 }
 
 #contact .g-icon{

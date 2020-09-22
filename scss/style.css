@@ -10,6 +10,7 @@ html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
   background-color: #1A181B;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -500,6 +501,8 @@ body {
 #contact .f-icon {
   height: 3rem;
   width: 3rem;
+  -webkit-transition: fill .4s ease;
+  transition: fill .4s ease;
 }
 
 #contact .g-icon {
