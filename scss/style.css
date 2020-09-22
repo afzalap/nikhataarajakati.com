@@ -559,14 +559,32 @@ body {
 
 .cc {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  color: black;
+  font-size: 1rem;
 }
 
 .copyright {
   font-size: 1.1rem;
+}
+
+.cp {
+  position: absolute;
+  bottom: 9.5%;
+  left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: black;
+  font-size: 1rem;
 }
 
 .has-fade {
@@ -867,6 +885,12 @@ body {
     display: -ms-grid;
     display: grid;
         grid-template-areas: 'a         c' 'b       d ';
+  }
+  .cp {
+    bottom: 12%;
+  }
+  .cc {
+    bottom: 4%;
   }
   #contact .Social-Profiles {
     -ms-grid-row: 1;

@@ -12,7 +12,13 @@
     #contact .contact{
         display: grid;
         grid-template-areas: 'a         c'
-                            'b       d '; 
+                            'b       d ';
+    }
+    .cp{
+        bottom:12%
+    }
+    .cc{
+        bottom: 4%;
     }
     #contact .Social-Profiles{
         grid-area: a;

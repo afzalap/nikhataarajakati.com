@@ -78,11 +78,23 @@
 
 .cc{
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     left: 50%;
+    width: fit-content;
     transform: translate(-50%);
+    color: black;
+    font-size: 1rem;
 }
 
 .copyright{
     font-size: 1.1rem;
+}
+.cp{
+    position: absolute;
+    bottom: 9.5%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%);
+    color: black;
+    font-size: 1rem;
 }
