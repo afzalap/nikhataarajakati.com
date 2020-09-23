@@ -2,6 +2,9 @@
     .mobile{     /*for desktop*/
         display: none;
     }
+    #header .overlay{
+        display: none;
+    }
     // hero section
     #hero h1{
         top: 0px;

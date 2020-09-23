@@ -456,7 +456,7 @@ body {
   background-color: #18D26E;
 }
 
-.certi-box:hover #icon-137-document-certificate {
+.certi-box:hover #icon-137 {
   fill: white;
 }
 
@@ -694,6 +694,9 @@ body {
 @media only screen and (min-width: 1024px) {
   .mobile {
     /*for desktop*/
+    display: none;
+  }
+  #header .overlay {
     display: none;
   }
   #hero h1 {

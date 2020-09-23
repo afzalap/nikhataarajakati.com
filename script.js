@@ -42,14 +42,14 @@ let timeline = gsap.timeline({
         .from("#skill .skill-bar", { 
             xPercent:"-250",
             ease:'power3.out', 
-            stagger:0.15
+            stagger:0.15,
         })
         .from("#skill .progress", {
             xPercent:"-100", 
             ease:'power2.out',
             stagger: 0.15,
             opacity: 0
-        }, 1);
+        }, 0.8);
         
 
         let timeline1 = gsap.timeline({
