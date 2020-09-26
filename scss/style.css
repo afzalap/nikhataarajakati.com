@@ -54,8 +54,8 @@ body {
 #header .header {
   min-height: 8vh;
   background-color: #1A181B;
-  -webkit-box-shadow: 0 0px 10px rgba(24, 210, 110, 0.3);
-          box-shadow: 0 0px 10px rgba(24, 210, 110, 0.3);
+  -webkit-box-shadow: 0 0px 10px rgba(24, 210, 110, 0.15);
+          box-shadow: 0 0px 10px rgba(24, 210, 110, 0.15);
 }
 
 #header .navbar {
@@ -362,8 +362,8 @@ body {
   background-color: #2B2B2B;
   border-radius: 3rem;
   overflow: hidden;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
 }
 
 #projects .project-box:hover {
@@ -425,8 +425,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .certi-icon {
@@ -434,8 +434,8 @@ body {
   width: 17.6rem;
   -webkit-filter: drop-shadow(-10px 0 0 rgba(138, 137, 137, 0.23));
           filter: drop-shadow(-10px 0 0 rgba(138, 137, 137, 0.23));
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .int {
@@ -537,7 +537,7 @@ body {
 
 #contact .mail a {
   color: white;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: normal;
 }
 
